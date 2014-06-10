@@ -1,3 +1,6 @@
-name: Your New Jekyll Site
+name: Mobile Maultaschen
 markdown: redcarpet
 pygments: true
+
+description: Mobile Maultschen - Die Entwickler-Gruppe aus Stuttgart
+keywords: mobile, maultaschen, stuttgart, development, ios, android

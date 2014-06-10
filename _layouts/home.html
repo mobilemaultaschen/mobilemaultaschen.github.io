@@ -13,7 +13,7 @@
 
     </head>
 
-    <body class="<?php echo $page->uid() ?>-page">
+    <body>
         <div class="page-wrap">
             <header class="page-header">
                 <div class="page-cover">
@@ -23,12 +23,32 @@
             </header>
             <div class="page-content">
 
-                <section class="content">
-                  <article>
-                    {{ content }}
-                  </article>
+                <section class="animated fadeIn">
+                    <?php
+                        $archive = $pages->find('archive');
+                        $events = $archive->children();
+                        $events = $events->sortBy('date', 'desc');
+
+                        $event = $events->first();
+                    ?>
+                    <h2>
+                        <?php if (time() < $event->date()): ?>
+                            Nächster Termin am
+                        <?php else: ?>
+                            Letzter Termin vom
+                        <?php endif; ?>
+                         <?php echo strftime('%d. %B %Y', $event->date()); ?></h2>
+                    <p>
+                        <?php echo $event->text(); ?>
+                    </p>
                 </section>
-                
+                <section class="animated fadeIn">
+                    <a href="https://basecamp.com/1756189/projects/4398060-mobile-maultaschen" target="mmbasecamp" class="btn">Basecamp</a>
+                </section>
+                <section>
+                    {{ content }}
+                </section>
+
             </div>
         </div>
         <footer class="page-footer">
