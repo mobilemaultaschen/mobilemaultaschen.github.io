@@ -13,7 +13,7 @@
 
     </head>
 
-    <body>
+    <body class="home-page">
         <div class="page-wrap">
             <header class="page-header">
                 <div class="page-cover">
@@ -24,22 +24,13 @@
             <div class="page-content">
 
                 <section class="animated fadeIn">
-                    <?php
-                        $archive = $pages->find('archive');
-                        $events = $archive->children();
-                        $events = $events->sortBy('date', 'desc');
+                    {% assign event = site.posts.first  %}
 
-                        $event = $events->first();
-                    ?>
                     <h2>
-                        <?php if (time() < $event->date()): ?>
-                            Nächster Termin am
-                        <?php else: ?>
-                            Letzter Termin vom
-                        <?php endif; ?>
-                         <?php echo strftime('%d. %B %Y', $event->date()); ?></h2>
+                        Termin vom {{ event.date | date: "%d.%m.%Y" }}
+                    </h2>
                     <p>
-                        <?php echo $event->text(); ?>
+                        {{ event.excerpt }}
                     </p>
                 </section>
                 <section class="animated fadeIn">
