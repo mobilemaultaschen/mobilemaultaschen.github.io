@@ -26,8 +26,8 @@
                 <section class="animated fadeIn">
                     {% assign event = site.posts.first  %}
 
-                    <h2>
-                        Termin vom {{ event.date | date: "%d.%m.%Y" }}
+                    <h2 class="page-date">
+                        {{ event.date | date: "%d/%m/%Y" }}
                     </h2>
                     <p>
                         {{ event.excerpt }}
@@ -51,6 +51,6 @@
         </footer>
 
         <script type="text/javascript" src="/javascript/jquery-2.1.1.min.js"></script>
-
+        <script type="text/javascript" src="/javascript/site.js"></script>
     </body>
 </html>
