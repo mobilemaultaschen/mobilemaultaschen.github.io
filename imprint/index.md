@@ -5,7 +5,7 @@ layout: default
 ### mobilemaultaschen.de - Angaben gemäß § 5 TMG
 
 Bowstreet GmbH
-Glockenblumenstr. 38
+Hopfauer Str. 15
 70563 Stuttgart
 
 E-Mail: hello@bowstreet.de
