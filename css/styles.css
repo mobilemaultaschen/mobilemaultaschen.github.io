@@ -115,6 +115,10 @@ p {
   padding-bottom: 2em;
 }
 
+strong {
+  font-weight: bold;
+}
+
 .btn {
   display: inline-block;
   color: #fff;
