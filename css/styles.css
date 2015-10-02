@@ -56,7 +56,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
            url('/fonts/sourcesanspro-semiboldit-webfont.woff') format('woff'),
            url('/fonts/sourcesanspro-semiboldit-webfont.ttf') format('truetype'),
            url('/fonts/sourcesanspro-semiboldit-webfont.svg#source_sans_proSBdIt') format('svg');
-      font-weight: normal;
+      font-weight: bold;
       font-style: italic;
 
   }
@@ -155,6 +155,10 @@ p {
 
 strong {
   font-weight: bold;
+}
+
+em {
+  font-style: italic;
 }
 
 .btn {
