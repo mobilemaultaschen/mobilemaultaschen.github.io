@@ -1,5 +1,5 @@
 ---
-title: Mobile Maultaschen #25
+title: Mobile Maultaschen 25
 date: 2015-05-12
 layout: post
 ---
