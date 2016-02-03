@@ -1,6 +1,7 @@
 name: Mobile Maultaschen
 markdown: kramdown
 highlighter: rouge
+future: true
 
 description: Mobile Maultschen - Die Entwickler-Gruppe aus Stuttgart
 keywords: mobile, maultaschen, stuttgart, development, ios, android
