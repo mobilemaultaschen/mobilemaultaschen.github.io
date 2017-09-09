@@ -1,6 +1,6 @@
 ---
 title: Mobile Maultaschen 50
-date: 2017-10-12
+date: 2017-09-12
 layout: post
 ---
 
