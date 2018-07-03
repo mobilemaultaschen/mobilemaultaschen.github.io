@@ -24,22 +24,13 @@
             <div class="page-content">
 
                 <section class="animated fadeIn">
-                    {% assign event = site.posts.first  %}
-
-                    <h2 class="page-date">
-                        {{ event.date | date: "%d/%m/%Y" }}
-                    </h2>
-                    <p>
-                        {{ event.content }}
-                    </p>
+                    {{ content }}
+                    Upcoming events are announced at <a href="https://www.meetup.com/mobile-maultaschen/">Meetup.com</a>
                 </section>
                 <section class="animated fadeIn">
-                    <a href="http://mm-slackin.mybluemix.net" target="mmslack" class="btn">Zum Slack</a>
+                    <p></p>
+                    <a href="http://mm-slackin.mybluemix.net" target="mmslack" class="btn">Join Slack</a>
                 </section>
-                <section>
-                    {{ content }}
-                </section>
-
             </div>
         </div>
         <footer class="page-footer">
